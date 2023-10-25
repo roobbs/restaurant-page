@@ -74,6 +74,7 @@ function createHeader() {
   
     const copyright = document.createElement("p");
     copyright.textContent = `Copyright © ${new Date().getFullYear()} Roobbs`;
+    footer.appendChild(copyright)
   
     return footer;
   }
