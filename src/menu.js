@@ -49,7 +49,6 @@ function createMenu () {
                 desc2.textContent="Delicious";
                 item2.appendChild(desc2);
 
-
 //////////////////////////////////////////////////////////////////////
         const container2 = document.createElement("div");
         container2.classList.add("cont");
@@ -180,11 +179,8 @@ function createMenu () {
                 desc2cont4.textContent="Delicious";
                 item2cont4.appendChild(desc2cont4);
             
-
     return menu;
 }
-
-
 
 export default function loadMenu () {
     const main = document.querySelector(".main");
