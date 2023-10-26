@@ -1,7 +1,7 @@
 :root{
-    --main-color: #ff7300; 
+    --main-color: rgb(255, 115, 0); 
     --second-color: #c82f00;
-    --third-color: #1b1b1b;
+    --third-color: #151515;
     --bg-color:#eaeaea;
 }
 ::-webkit-scrollbar{
@@ -43,9 +43,10 @@ body{
 }
 .restaurant-name{
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 900;
     padding: 5px;
-
+    font-style:oblique;
+    font-family:'Trebuchet MS';
 }
 .header nav{
     display: flex;
@@ -88,6 +89,7 @@ body{
 .home1{
     background-image: url(./rest.jpg);
     background-size: cover;
+    background-position:bottom;
     height: 100vh;
 }
 .home2{
@@ -120,12 +122,60 @@ body{
 }
 /*MENU*/
 .menuContainer{
-    background-color: var(--main-color);
+    background-image: url(./rest2.jpg);
+    background-size:cover;
+    background-position:center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mainMenu{
+    margin: max(1vh, 3rem);
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255, .6);
+    border-radius: 30px;
+    border: 3px solid var(--second-color);
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.cont{
+    background-color: rgb(255, 255, 255, .9);
+    border-radius: 20px;
+    padding: 0rem 2rem;
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+}
+.itemContainer{
+    display: grid;
+    gap: .5rem;
+    align-content: center
+}
+.menuHead{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--main-color);
+}
+.menuItem{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+}
+.itemName, .itemPrice{
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+.itemDesc{
+    grid-column: span 2;
+    font-size: 1rem;
 }
 /*CONTACT*/
 .contact1{
     background-image: url(./rest1.jpg);
     background-size: cover;
+    background-position:bottom;
     height: 100vh;
 }
 .contact2{
@@ -150,7 +200,6 @@ body{
     flex-direction: column;
     gap: 2.5rem;
 }
-
 .footer{
     position: absolute;
     width: 80%;
